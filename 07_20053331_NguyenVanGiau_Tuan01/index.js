@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Triangle_1 = require("./Triangle");
+var Triangle_1 = require("./bai1/Triangle");
 //Module 0 Bai 1
 var main = function () {
     var triangle1 = new Triangle_1.Triangle(3, 4, 5);

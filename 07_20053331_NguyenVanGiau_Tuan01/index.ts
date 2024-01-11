@@ -1,4 +1,4 @@
-import { Triangle } from "./Triangle";
+import { Triangle } from "./bai1/Triangle";
 
 
 //Module 0 Bai 1
