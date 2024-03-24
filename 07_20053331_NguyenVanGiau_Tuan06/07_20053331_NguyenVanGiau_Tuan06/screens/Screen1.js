@@ -36,7 +36,7 @@ export default function Screen1() {
           toValue: -1,
           duration: 2000,
           useNativeDriver: false,
-        })
+        }),
       ])
     ).start();
   };
@@ -53,7 +53,7 @@ export default function Screen1() {
           toValue: 1,
           duration: 3000,
           useNativeDriver: false,
-        })
+        }),
       ])
     ).start();
   };
@@ -129,7 +129,7 @@ export default function Screen1() {
             height: 100,
             width: 100,
           }}
-        ></Image>
+        ></Image> 
       </Animated.View>
     </SafeAreaView>
   );
