@@ -1,0 +1,42 @@
+[
+    {
+        "id": "11",
+        "titleCourse": "Course 1",
+        "lecture": "Lecturer A",
+        "price": 19.99,
+        "rating": 4.5,
+        "numberRating": 120,
+        "numberLesson": 10,
+        "image": "require('../assets/Image 20.png')"
+    },
+    {
+        "id": "22",
+        "titleCourse": "Course 2",
+        "lecture": "Lecturer B",
+        "price": 29.99,
+        "rating": 4.2,
+        "numberRating": 90,
+        "numberLesson": 8,
+        "image": "require('../assets/Image 19.png')"
+    },
+    {
+        "id": "33",
+        "titleCourse": "Course 3",
+        "lecture": "Lecturer C",
+        "price": 39.99,
+        "rating": 4.8,
+        "numberRating": 150,
+        "numberLesson": 12,
+        "image": "require('../assets/Image 20.png')"
+    },
+    {
+        "id": "44",
+        "titleCourse": "Course 4",
+        "lecture": "Lecturer D",
+        "price": 39.99,
+        "rating": 4.8,
+        "numberRating": 150,
+        "numberLesson": 12,
+        "image": "require('../assets/Image 19.png')"
+    }
+]

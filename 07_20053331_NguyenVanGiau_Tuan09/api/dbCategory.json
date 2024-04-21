@@ -1,0 +1,8 @@
+[
+    { "id": "1", "title": "Bussiness", "icon": "require(../assets/Button 17.png')" },
+    { "id": "2", "title": "Design", "icon": "require(../assets/Button 18.png')" },
+    { "id": "3", "title": "Code", "icon": "require(../assets/Button 19.png')" },
+    { "id": "4", "title": "Writing", "icon": "require(../assets/Button 20.png')" },
+    { "id": "5", "title": "Movie", "icon": "require(../assets/Button 21.png')" },
+    { "id": "6", "title": "Language", "icon": "require('../assets/Button 22.png')" }
+]
