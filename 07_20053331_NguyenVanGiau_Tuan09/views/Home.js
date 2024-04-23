@@ -1,16 +1,10 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import Categories from '../components/Categories'
-import { category, course, teacher } from '../data/data'
-import Populate from '../components/Populate'
-import Recommend from '../components/Recommend'
-import Inspire from '../components/Inspire'
-import TopTeacher from '../components/TopTeacher'
-import NetworkError from '../components/NetworkError'
+import SearchBar from '../components/SearchBar'
+import Category from '../components/Category'
 
-export default function Home() {
+
+export default function Home({ navigation }) {
     const [data, setData] = useState({})
 
     async function customFetch(url, method = 'GET', data = null) {
@@ -37,15 +31,10 @@ export default function Home() {
         }
     }
     const handleFetch = async (url) => {
-        const categoryData = await customFetch(`${url}/dbCategory`, 'GET', null)
-        const courseData = await customFetch(`${url}/dbCourse`, 'GET', null)
-        const teacherData = await customFetch(`${url}/dbTeacher`, 'GET', null)
-        console.log(categoryData);
-
+        const homeData = await customFetch(`${url}/dbHome`, 'GET', null)
+        console.log(homeData);
         await setData({
-            category: categoryData,
-            course: courseData,
-            teacher: teacherData,
+            dbHome: homeData,
         })
 
     }
@@ -59,37 +48,13 @@ export default function Home() {
     }, [data]);
 
     return (
-        // USING DATA JSON SERVER IN FOLDER API
         <ScrollView style={styles.container}>
-            <Header name={"Rosie"}></Header>
-            <Banner></Banner>
-            {
-                data?.category ?
-                    <View>
-                        <Categories data={data.category}></Categories>
-                        <Populate data={data.course}></Populate>
-                        <Recommend data={data.course}></Recommend>
-                        <Inspire data={data.course}></Inspire>
-                        <TopTeacher data={data.teacher}></TopTeacher>
-                    </View>
-                    :
-                    <NetworkError onReconnect={()=> {
-                        
-                    }} ></NetworkError>
-            }
+            <SearchBar></SearchBar>
+            <Category categoryTitle={"Lifestyle"} data={data.dbHome} listHorizontal={true}></Category>
+            <Category categoryTitle={"Bussiness"} data={data.dbHome} listHorizontal={true}></Category>
+            <Category categoryTitle={"Art"} data={data.dbHome} listHorizontal={true}></Category>
+            <Category categoryTitle={"Technology"} data={data.dbHome} listHorizontal={true}></Category>
         </ScrollView>
-
-
-        // USING DATA MODULE IMPORT
-        /*  <ScrollView style={styles.container}>
-             <Header name={"Rosie"}></Header>
-             <Banner></Banner>
-             <Categories data={category}></Categories>
-             <Populate data={course}></Populate>
-             <Recommend data={course}></Recommend>
-             <Inspire data={course}></Inspire>
-             <TopTeacher data={teacher}></TopTeacher>
-         </ScrollView> */
     )
 }
 

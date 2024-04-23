@@ -1,110 +1,127 @@
 {
-    "dbCategory": [
-        {
-            "id": "1",
-            "title": "Bussiness",
-            "icon": "../assets/Button 17.png"
-        },
-        {
-            "id": "2",
-            "title": "Design",
-            "icon": "../assets/Button 18.png"
-        },
-        {
-            "id": "3",
-            "title": "Code",
-            "icon": "../assets/Button 19.png"
-        },
-        {
-            "id": "4",
-            "title": "Writing",
-            "icon": "../assets/Button 20.png"
-        },
-        {
-            "id": "5",
-            "title": "Movie",
-            "icon": "../assets/Button 21.png"
-        },
-        {
-            "id": "6",
-            "title": "Language",
-            "icon": "../assets/Button 22.png"
-        }
-    ],
-    "dbCourse": [
-        {
-            "id": "11",
-            "titleCourse": "Course 1",
-            "lecture": "Lecturer A",
-            "price": 19.99,
-            "rating": 4.5,
-            "numberRating": 120,
-            "numberLesson": 10,
-            "image": "../assets/Image 20.png"
-        },
-        {
-            "id": "22",
-            "titleCourse": "Course 2",
-            "lecture": "Lecturer B",
-            "price": 29.99,
-            "rating": 4.2,
-            "numberRating": 90,
-            "numberLesson": 8,
-            "image": "../assets/Image 19.png"
-        },
-        {
-            "id": "33",
-            "titleCourse": "Course 3",
-            "lecture": "Lecturer C",
-            "price": 39.99,
-            "rating": 4.8,
-            "numberRating": 150,
-            "numberLesson": 12,
-            "image": "../assets/Image 20.png"
-        },
-        {
-            "id": "44",
-            "titleCourse": "Course 4",
-            "lecture": "Lecturer D",
-            "price": 39.99,
-            "rating": 4.8,
-            "numberRating": 150,
-            "numberLesson": 12,
-            "image": "../assets/Image 19.png"
-        }
-    ],
-    "dbTeacher": [
-        {
-            "id": "11",
-            "lecture": "Lecturer A",
-            "university": "University 1",
-            "rating": 4.5,
-            "numberRating": 120,
-            "image": "../assets/Image 21.png"
-        },
-        {
-            "id": "22",
-            "lecture": "Lecturer B",
-            "university": "University 2",
-            "rating": 4.2,
-            "numberRating": 90,
-            "image": "../assets/Image 26.png"
-        },
-        {
-            "id": "33",
-            "lecture": "Lecturer C",
-            "university": "University 3",
-            "rating": 4.8,
-            "numberRating": 150,
-            "image": "../assets/Image 25.png"
-        },
-        {
-            "id": "44",
-            "lecture": "Lecturer D",
-            "university": "University 4",
-            "rating": 4.8,
-            "numberRating": 150,
-            "image": "../assets/Image 21.png"
-        }
-    ]
+  "dbHome": [
+    {
+      "id": "1",
+      "title": "Bussiness",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 31.png"
+    },
+    {
+      "id": "2",
+      "title": "Design",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 32.png"
+    },
+    {
+      "id": "3",
+      "title": "Code",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 36.png"
+    },
+    {
+      "id": "4",
+      "title": "Writing",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 37.png"
+    },
+    {
+      "id": "5",
+      "title": "Movie",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 38.png"
+    },
+    {
+      "id": "6",
+      "title": "Language",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus justo nec nunc ultricies, sed finibus ligula luctus.",
+      "image": "../assets/Image 46.png"
+    }
+  ],
+  "dbSearch": [
+    {
+      "id": 1,
+      "image": "../assets/Avatar 9.png",
+      "topPerformer": true,
+      "name": "John Doe",
+      "profesional": "Software Engineer",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "image": "../assets/Avatar 10.png",
+      "topPerformer": false,
+      "name": "Jane Smith",
+      "profesional": "Data Scientist",
+      "info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "rating": 3
+    },
+    {
+      "id": 3,
+      "image": "../assets/Avatar 11.png",
+      "topPerformer": true,
+      "name": "Alice Johnson",
+      "profesional": "UX Designer",
+      "info": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "image": "../assets/Avatar 12.png",
+      "topPerformer": false,
+      "name": "Bob Williams",
+      "profesional": "Project Manager",
+      "info": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "rating": 2
+    },
+    {
+      "id": 5,
+      "image": "../assets/Avatar 9.png",
+      "topPerformer": true,
+      "name": "Emma Brown",
+      "profesional": "Marketing Specialist",
+      "info": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "image": "../assets/Avatar 10.png",
+      "topPerformer": false,
+      "name": "Michael Wilson",
+      "profesional": "Financial Analyst",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "rating": 1
+    },
+    {
+      "id": 7,
+      "image": "../assets/Avatar 12.png",
+      "topPerformer": true,
+      "name": "Sophia Martinez",
+      "profesional": "Graphic Designer",
+      "info": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "rating": 0
+    }
+  ],
+  "dbBanner": [
+    {
+      "id": 1,
+      "image": "../assets/Image 31.png"
+    },
+    {
+      "id": 2,
+      "image": "../assets/Image 32.png"
+    },
+    {
+      "id": 3,
+      "image": "../assets/Image 36.png"
+    },
+    {
+      "id": 4,
+      "image": "../assets/Image 37.png"
+    },
+    {
+      "id": 5,
+      "image": "../assets/Image 36.png"
+    }
+  ]
 }
