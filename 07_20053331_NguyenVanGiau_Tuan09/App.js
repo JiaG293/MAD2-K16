@@ -10,8 +10,8 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <NavigationContainer>
-          {/* <MainStack></MainStack> */}
-          <BottomTabs></BottomTabs>
+          <MainStack></MainStack>
+          {/* <BottomTabs></BottomTabs> */}
         </NavigationContainer>
         <StatusBar barStyle="dark-content" />
       </SafeAreaView>

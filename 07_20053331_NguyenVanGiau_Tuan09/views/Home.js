@@ -47,9 +47,16 @@ export default function Home({ navigation }) {
         console.log(data);
     }, [data]);
 
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            console.log('Enter pressed!');
+            navigation.navigate('Search')
+        }
+    };
+
     return (
         <ScrollView style={styles.container}>
-            <SearchBar></SearchBar>
+            <SearchBar onKeyPress={handleKeyPress}></SearchBar>
             <Category categoryTitle={"Lifestyle"} data={data.dbHome} listHorizontal={true}></Category>
             <Category categoryTitle={"Bussiness"} data={data.dbHome} listHorizontal={true}></Category>
             <Category categoryTitle={"Art"} data={data.dbHome} listHorizontal={true}></Category>
